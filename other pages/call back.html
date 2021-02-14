@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>call Back</title>
+  </head>
+  <body>
+    <h3>Call Me Back Request</h3>
+    <br><br>
+    <form class="" action="mailto:deepakkumarjha658@gmail.com" method="post">
+      <fieldset>
+        <legend>Please Enter the valid Details</legend><br>
+        <label>First Name</label><br>
+        <input type="text" name="first_name" required> <br>
+        <label>Last Name</label><br>
+        <input type="text" name="last_name" required><br>
+        <label>Email-Id</label><br>
+        <input type="email" name="email_id"><br>
+        <label>Contact no</label><br>
+        <input type="tel" name="Tel" required autocomplete="off" pattern="[0-9]{10}" placeholder="Enter your 10 digit mb no."><br>
+        <label>Gender</label><br>
+        <input type="radio" name="male">
+        <label>Male</label><br>
+        <input type="radio" name="female">
+        <label>Female</label><br>
+        <input type="radio" name="other">
+        <label>other</label><br><br>
+        <label>Country</label><br>
+        <input list="country" name="country">
+        <datalist id="country">
+          <option value="IND">India</option>
+          <option value="Pak">Pakistan</option>
+          <option value="Nepal">Nepal</option>
+          <option value="China">china</option>
+        </datalist><br><br>
+
+        <label>Which kind of Website You want</label>
+        <select class="web" name="Website">
+          <option value="Restorent">Restorent</option>
+          <option value="School" selected>School</option>
+          <option value="college">College</option>
+          <option value="Cafe">Cafe</option>
+          <option value="Hotel">Hotel</option>
+
+        </select><br><br>
+        <label>Message</label><br>
+        <textarea name="message" rows="5" cols="30" placeholder="Please write your msg here"></textarea><br>
+        <label>By clicking the submit button you agree with all term & condition</label>
+        <input type="checkbox" name="checkbox" required>
+        <input type="submit" name="submit">
+
+      </fieldset>
+    </form>
+  </body>
+</html>
